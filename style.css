@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0px;
+    font-family: "Work Sans";
+    font-size: 16px;
+}
+
+h1,
+p {
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+}
+
+header img[alt*=desktop] {
+    display: none;
+}
+
+#main {
+    background-color: hsl(0, 0%, 100%);
+    width: 327px;
+    z-index: 1;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+#heading {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#heading img {
+    width: 24px;
+    margin-right: 25px;
+}
+
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question {
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.question:hover {
+    color: #AD28EB;
+}
+
+.answer {
+    margin-top: 25px;
+    color: hsl(292, 16%, 49%);
+    font-size: 0.9em;
+    line-height: 21px;
+    letter-spacing: -0.2px;
+}
+
+hr {
+    opacity: 0.1;
+    margin-top: 18px;
+    margin-bottom: 22px;
+}
+
+.attribution {
+    padding-top: 40px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (width > 375px) {
+
+    body {
+        padding-top: 170px;
+    }
+
+    header img[alt*=desktop] {
+        display: block;
+    }
+
+    header img[alt*=mobile] {
+        display: none;
+    }
+
+    #main {
+        width: 600px;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 75px -30px hsl(292, 16%, 49%);
+    }
+
+    #heading img {
+        width: 40px;
+    }
+
+    h1 {
+        color: hsl(292, 42%, 14%);
+        font-size: 3.5em;
+    }
+
+    .question {
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-right: 0px;
+        letter-spacing: 0.22px;
+    }
+
+    .answer {
+        font-size: 1rem;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    hr {
+        opacity: 0.1;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+}
